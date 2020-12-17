@@ -1,6 +1,6 @@
 package com.example.mvptwo.contract;
 
-import com.example.mvptwo.utils.BaseView;
+import com.example.mvptwo.base.BaseView;
 import com.example.mvptwo.utils.INetCallBack;
 
 public class HomeContract {
