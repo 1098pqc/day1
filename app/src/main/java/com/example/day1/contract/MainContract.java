@@ -1,6 +1,6 @@
 package com.example.day1.contract;
 
-import com.example.day1.utils.net.IBaseView;
+import com.example.day1.base.BaseView;
 import com.example.day1.utils.net.INetCallBack;
 
 /**
@@ -13,7 +13,7 @@ public class MainContract {
     public interface IMainPresenter{
         void login(String url);
     }
-    public interface IMainView extends IBaseView {
+    public interface IMainView extends BaseView {
         <T> void loginRelt(T t);
     }
 }
