@@ -3,11 +3,11 @@ package com.example.day1.view;
 import android.util.Log;
 
 import com.example.day1.R;
-import com.example.day1.base.BaseActivity;
 import com.example.day1.contract.MainContract;
 import com.example.day1.model.data.NewsBean;
 import com.example.day1.presenter.MainPresenterImpl;
-import com.example.day1.utils.net.URLConstant;
+import com.example.mvplibrary.base.BaseActivity;
+import com.example.mvplibrary.utils.URLConstant;
 
 import java.util.ArrayList;
 
@@ -30,7 +30,7 @@ public class MainActivity extends BaseActivity<MainPresenterImpl> implements Mai
 
     @Override
     public MainPresenterImpl getPresenter() {
-        return new MainPresenterImpl(this);
+        return new MainPresenterImpl();
     }
 
     @Override

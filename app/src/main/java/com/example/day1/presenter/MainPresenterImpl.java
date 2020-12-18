@@ -1,22 +1,18 @@
 package com.example.day1.presenter;
 
-import com.example.day1.base.BasePresenter;
 import com.example.day1.contract.MainContract;
 import com.example.day1.model.MainModelImpl;
 import com.example.day1.model.data.NewsBean;
-import com.example.day1.utils.net.INetCallBack;
+import com.example.mvplibrary.base.BasePresenter;
+import com.example.mvplibrary.utils.INetCallBack;
 
-public class MainPresenterImpl extends BasePresenter<MainContract.IMainView> implements MainContract.IMainPresenter {
+public class MainPresenterImpl extends BasePresenter<MainContract.IMainView,MainContract.IMainModel> implements MainContract.IMainPresenter {
 
-    private MainContract.IMainModel model;
-
-    public MainPresenterImpl(MainContract.IMainView view) {
-        this.model = new MainModelImpl(this);
-    }
 
     @Override
     public void login(String url) {
-        model.getLoginData(url, new INetCallBack<NewsBean>() {
+        iModel = new MainModelImpl(this);
+        iModel.getLoginData(url, new INetCallBack<NewsBean>() {
             @Override
             public void onSuccess(NewsBean newsBean) {
                 iView.loginRelt(newsBean);
@@ -27,5 +23,10 @@ public class MainPresenterImpl extends BasePresenter<MainContract.IMainView> imp
                 iView.tips(err);
             }
         });
+    }
+
+    @Override
+    public MainContract.IMainModel getiModel() {
+        return new MainModelImpl(this);
     }
 }

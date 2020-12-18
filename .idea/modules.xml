@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/day1.iml" filepath="$PROJECT_DIR$/.idea/modules/day1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/day1.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/day1.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app2/day1.app2.iml" filepath="$PROJECT_DIR$/.idea/modules/app2/day1.app2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mvplibrary/day1.mvplibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/mvplibrary/day1.mvplibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mvptwo/day1.mvptwo.iml" filepath="$PROJECT_DIR$/.idea/modules/mvptwo/day1.mvptwo.iml" />
     </modules>
   </component>

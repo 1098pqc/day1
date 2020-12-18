@@ -1,13 +1,14 @@
 package com.example.day1.contract;
 
-import com.example.day1.base.BaseView;
-import com.example.day1.utils.net.INetCallBack;
+import com.example.mvplibrary.base.BaseModel;
+import com.example.mvplibrary.base.BaseView;
+import com.example.mvplibrary.utils.INetCallBack;
 
 /**
  *  契约类
  */
 public class MainContract {
-    public interface IMainModel{
+    public interface IMainModel extends BaseModel {
         <T> void getLoginData(String url, INetCallBack<T> callBack);
     }
     public interface IMainPresenter{

@@ -2,8 +2,8 @@ package com.example.day1.model;
 
 import com.example.day1.contract.MainContract;
 import com.example.day1.model.data.NewsBean;
-import com.example.day1.utils.net.INetCallBack;
-import com.example.day1.utils.net.RetrofitUtils;
+import com.example.mvplibrary.utils.INetCallBack;
+import com.example.mvplibrary.utils.RetrofitUtils;
 
 public class MainModelImpl implements MainContract.IMainModel {
 

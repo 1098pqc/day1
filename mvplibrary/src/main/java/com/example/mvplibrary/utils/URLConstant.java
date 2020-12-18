@@ -1,4 +1,4 @@
-package com.example.day1.utils.net;
+package com.example.mvplibrary.utils;
 
 public class URLConstant {
     public static String BASEURL = "http://cdwan.cn:7000/exam2003/";

@@ -1,4 +1,4 @@
-package com.example.day1.base;
+package com.example.mvplibrary.base;
 
 import android.os.Bundle;
 
@@ -26,4 +26,13 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
     protected abstract int getLayoutID();
 
     public abstract P getPresenter();
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //MVP解绑
+        if (presenter != null){
+            presenter.detachView();
+        }
+    }
 }
